@@ -1,5 +1,5 @@
 Cara Instalasi : 
-1.	Download folder “UAS_KBP” di github : https://github.com/NUGRAHA18/UAS_KBP.
+1.	Download zip folder “UAS_KBP” di github : https://github.com/NUGRAHA18/UAS_KBP.
 2.	Membuka vs code dan masuk ke file Login page (atau bisa langsung masuk ke file index). 
 3.	Click kanan dan buka pilihan show preview. (sebelumnya install exention “show prefiview”) atau bisa juga dengan mengclick go live pada kanan bawah. 
 Cara Penggunaan :
