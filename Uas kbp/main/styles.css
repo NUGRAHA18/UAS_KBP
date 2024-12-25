@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 3em;
+    font-weight: bold;
+    color: #00796b;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+}
+
+.todo-container {
+    margin-top: 30px;
+}
+
+.todo-container input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.todo-container ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0f2f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.todo-container ul li:hover {
+    transform: translateY(-2px);
+}
+
+.todo-container ul li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todo-container ul li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #00796b;
+    transition: color 0.3s;
+}
+
+.todo-container ul li button:hover {
+    color: #004d40;
+}
+
+.settings {
+    margin-bottom: 20px;
+}
+
+.settings label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.settings input {
+    width: 70px;
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .settings label {
+        font-size: 12px;
+    }
+
+    .settings input {
+        width: 50px;
+    }
+}

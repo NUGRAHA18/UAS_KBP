@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Support Website</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles-index.css">
+</head>
+<body>
+    <div id="main-website">
+        <div class="container">
+            <h1>Learning Support Website</h1>
+
+            <!-- Pomodoro Timer -->
+            <div class="pomodoro-timer">
+                <div class="decoration-icon">⏰</div>
+                <h2 class="section-title">Pomodoro Timer</h2>
+                <div class="timer">
+                    <h3 id="timer-display">25:00</h3>
+                    <button id="start-timer" class="btn btn-primary">Start</button>
+                    <button id="reset-timer" class="btn btn-secondary">Reset</button>
+                </div>
+                <div class="form-group">
+                    <label for="work-time">Work Time (minutes): </label>
+                    <input type="number" id="work-time" class="form-control d-inline w-auto" value="25">
+                    <label for="break-time">Break Time (minutes): </label>
+                    <input type="number" id="break-time" class="form-control d-inline w-auto" value="5">
+                </div>
+            </div>
+
+            <!-- To-Do List -->
+            <div class="to-do-list">
+                <div class="decoration-icon">📝</div>
+                <h2 class="section-title">To-Do List</h2>
+                <div class="input-group">
+                    <input type="text" id="new-task" class="form-control" placeholder="Add a new task">
+                    <button id="add-task" class="btn btn-success">Add</button>
+                </div>
+                <ul id="task-list" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
